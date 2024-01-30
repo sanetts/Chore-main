@@ -10,9 +10,8 @@
 
     <h2>Manage Chores</h2>
 
-    <a href="addchore.html">
-        <button id="add_chore_button">Add Chore</button>
-    </a>
+    
+   
 
     <section>
         <h3>Ongoing/Pending Chore Assignments</h3>
@@ -58,8 +57,37 @@
         </table>
     </section>
 
+
+    <div id="addChoreModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            
+            <form action="#" method="" id="chore_assignment_form">
+
+                <label for="assign_person">Person Assigned:</label>
+                <input type="text" id="assigned_by" name="assigned_by" required><br>
+               
+        
+                <label for="assign_chore">Name of chore :</label>
+                <input type="text" id="chore_name" name="chore_name" required><br>
+        
+                <label for="due_date">Due Date:</label>
+                <input type="date" id="due_date" name="due_date" required><br>
+        
+        
+                <input type="submit" id="assign_chore_button" name="assign_chore_button" value="Assign Chore">
+        
+            </form>
+
+            
+        
+        </div>
+
+        
+    </div>
+    <button id="add_chore_button">Add Chore</button>
 <script src="chorescript.js"></script>
-<script src="addchorescript.js"></script>
+
 
 </body>
 </html>
