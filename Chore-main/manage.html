@@ -16,7 +16,7 @@
 
     <section>
         <h3>Ongoing/Pending Chore Assignments</h3>
-        <table>
+        <table id="ongoing-tasks-table">
             <thead>
                 <tr>
                     <th>Chore Name</th>
@@ -28,13 +28,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="ongoing-chore-choreId1">
                     <td>Mow the Lawn</td>
                     <td>John Doe</td>
                     <td>2024-01-29</td>
                     <td>2024-02-05</td>
                     <td>Pending</td>
-                    <td><button onclick="updateChoreStatus('completed', 'choreId1')">Mark as Completed</button></td>
+                    <td><button class="mark-completed-button" data-chore-id="choreId1">Mark as Completed</button></td>
                 </tr>
             </tbody>
         </table>
@@ -42,7 +42,7 @@
 
     <section>
         <h3>Completed Chores</h3>
-        <table>
+        <table id="completed-chores-table">
             <thead>
                 <tr>
                     <th>Chore Name</th>
@@ -53,20 +53,13 @@
                 </tr>
             </thead>
             <tbody>
-
-                <tr>
-                    <td>Clean the Garage</td>
-                    <td>Jane Doe</td>
-                    <td>2024-01-25</td>
-                    <td>2024-02-01</td>
-                    <td>Completed</td>
-                </tr>
-
+                <!-- Completed chores will be appended here -->
             </tbody>
         </table>
     </section>
 
-    <script src="script.js"></script>
+<script src="chorescript.js"></script>
+<script src="addchorescript.js"></script>
 
 </body>
 </html>
