@@ -2,6 +2,7 @@ console.log("addchorescript.js loaded successfully");
 document.addEventListener('DOMContentLoaded', function () {
 
   const addChoreButton = document.getElementById('add_chore_button');
+  console.log(addChoreButton)
   const addChoreModal = document.getElementById('addChoreModal');
 
   addChoreButton.addEventListener('click', function () {
